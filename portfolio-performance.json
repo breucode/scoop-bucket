@@ -1,22 +1,23 @@
 {
     "homepage": "http://www.portfolio-performance.info",
     "description": "An open source tool to calculate the overall performance of an investment portfolio.",
-    "version": "0.48.1",
+    "version": "0.55.0",
     "license": "EPL-1.0",
     "bin": "PortfolioPerformance.exe",
-    "extract_dir": "portfolio-performance",
+    "extract_dir": "portfolio",
     "shortcuts": [
-        ["PortfolioPerformance.exe", "Portfolio Performance"]
+        [
+            "PortfolioPerformance.exe",
+            "Portfolio Performance"
+        ]
     ],
     "suggest": {
-        "JRE": [ "java/adopt11-hotspot-jre" ]
+        "JRE": "java/adopt11-hotspot-jre"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/buchen/portfolio/releases/download/0.48.1/PortfolioPerformance-0.48.1-win32.win32.x86_64.zip"
-        },
-        "32bit": {
-            "url": "https://github.com/buchen/portfolio/releases/download/0.48.1/PortfolioPerformance-0.48.1-win32.win32.x86.zip"
+            "url": "https://github.com/buchen/portfolio/releases/download/0.55.0/PortfolioPerformance-0.55.0-win32.win32.x86_64.zip",
+            "hash": "a13a085a4d3cc64632c98cd3547b7dd036a6619087c43070d80f10859180ce99"
         }
     },
     "checkver": {
@@ -26,9 +27,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/buchen/portfolio/releases/download/$version/PortfolioPerformance-$version-win32.win32.x86_64.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/buchen/portfolio/releases/download/$version/PortfolioPerformance-$version-win32.win32.x86.zip"
             }
         }
     }
