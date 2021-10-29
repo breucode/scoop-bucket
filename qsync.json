@@ -1,0 +1,21 @@
+{
+    "version": "5.0.2.0927",
+    "description": "Qsync",
+    "homepage": "https://www.qnap.com/en-us/utilities/essentials",
+    "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-5.0.2.0927.exe#/dl.7z",
+    "hash": "e61305a4c8a5df4193fa95480b506643b64cb8fe65927c54258ead663764fa78",
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+    ],
+    "bin": "Qsync.exe",
+    "shortcuts": [
+        [
+            "Qsync.exe",
+            "Qsync"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-$version.exe#/dl.7z"
+    }
+}
