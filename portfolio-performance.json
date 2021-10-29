@@ -12,7 +12,7 @@
         ]
     ],
     "suggest": {
-        "JRE": "java/adopt11-hotspot-jre"
+        "JRE": "java/semeru11-jre"
     },
     "architecture": {
         "64bit": {
