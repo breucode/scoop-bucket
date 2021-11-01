@@ -10,7 +10,7 @@
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\""
             },
             "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v2.34.3/ledger-live-desktop-2.34.3-win.exe#/dl.7z",
-            "hash": ""
+            "hash": "4d79d0646512fb89a9a248044ef461d7926227d373d9aba34bc1e08a5f805504"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse",
