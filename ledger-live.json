@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.ledger.com/ledger-live",
     "description": "Ledger Live is a new generation wallet desktop application providing a unique interface to maintain multiple cryptocurrencies for your Ledger Nano S / Blue.",
-    "version": "2.34.3",
+    "version": "2.36.3",
     "license": "MIT",
     "bin": "Ledger Live.exe",
     "architecture": {
@@ -9,8 +9,8 @@
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\""
             },
-            "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v2.34.3/ledger-live-desktop-2.34.3-win.exe#/dl.7z",
-            "hash": "4d79d0646512fb89a9a248044ef461d7926227d373d9aba34bc1e08a5f805504"
+            "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v2.36.3/ledger-live-desktop-2.36.3-win-x64.exe#/dl.7z",
+            "hash": "9740b4b5e9a9791688b04bfd492c2c185f5082b032beef62f93613aeb7e60bd1"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse",
@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v$version/ledger-live-desktop-$version-win.exe#/dl.7z"
+                "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v$version/ledger-live-desktop-$version-win-x64.exe#/dl.7z"
             }
         }
     }
